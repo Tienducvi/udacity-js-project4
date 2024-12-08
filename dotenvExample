@@ -1,0 +1,14 @@
+POSTGRES_USERNAME = "postgres"
+POSTGRES_PASSWORD = "vitieu98"
+POSTGRES_DB = "postgres"
+POSTGRES_HOST = "database-1.cigi0lkmt3qw.us-east-1.rds.amazonaws.com"
+DB_PORT = 5432
+RDS_DIALECT = "postgres"
+AWS_REGION = "us-east-1" 
+AWS_BUCKET = "vitieubucket123456"
+URL = "http://localhost:8080"
+JWT_SECRET = "hello"
+AWS_PROFILE = ""
+AWS_ACCESS_KEY = ""
+AWS_SECRET_ACCESS_KEY = ""
+
