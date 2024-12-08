@@ -47,15 +47,15 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - main
           type: approval
       - frontend:
           filters:
             branches:
               only:
-                - master
+                - main
       - server:
           filters:
             branches:
               only:
-                - master
+                - main
