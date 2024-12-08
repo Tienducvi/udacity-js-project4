@@ -12,3 +12,5 @@ eb setenv URL=http://udagram-api-dev.us-east-1.elasticbeanstalk.com/
 eb setenv AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION
 eb setenv profile=$profile
 eb setenv PORT=$PORT USERNAME=$USERNAME
+eb setenv AWS_ACCESS_KEY=$AWS_ACCESS_KEY
+eb setenv AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY

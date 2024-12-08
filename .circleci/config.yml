@@ -22,8 +22,8 @@ jobs:
       - aws-cli/install
       - aws-cli/setup:
           aws-access-key-id: AWS_ACCESS_KEY
+          aws-secret-access-key: AWS_SECRET_ACCESS_KEY
           aws-region: AWS_REGION
-          profile-name: AWS_PROFILE
       - run:
           name: Deploy Frontend
           command: aws s3 cp --recursive  ./www s3://vitieubucket123456/
