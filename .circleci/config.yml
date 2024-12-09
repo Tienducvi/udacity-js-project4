@@ -40,7 +40,11 @@ jobs:
           aws-access-key-id: AWS_ACCESS_KEY
           aws-secret-access-key: AWS_SECRET_ACCESS_KEY
           aws-region: AWS_REGION
-      - eb/setup
+      - run:
+          name: Initialize Elastic Beanstalk Application
+          command: |
+            eb init udagram-api-last-last-last --region $AWS_REGION --platform node.js
+            eb use udagram-api-dev-last-last || eb create udagram-api-dev-last-last --platform node.js --region $AWS_REGION
       - run:
           name: Set Environment Variables in Elastic Beanstalk
           command: |
