@@ -21,6 +21,8 @@ To get detail information, check Documents
 
 - A S3 bucket for hosting uploaded pictures.
 
+```
+
 ## Installation
 
 ```bash
