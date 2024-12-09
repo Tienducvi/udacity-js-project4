@@ -44,7 +44,7 @@ jobs:
           name: Initialize Elastic Beanstalk Application
           command: |
             eb init udagram-api-last-last-last --region us-east-1 --platform node.js
-            eb use udagram-api-dev-last-last || eb create udagram-api-dev-last-last --platform node.js --region $AWS_REGION
+            eb use udagram-api-dev-last-last || eb create udagram-api-dev-last-last --platform node.js --region us-east-1
       - run:
           name: Set Environment Variables in Elastic Beanstalk
           command: |
