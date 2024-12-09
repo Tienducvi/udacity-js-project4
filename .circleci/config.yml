@@ -42,21 +42,6 @@ jobs:
           aws-region: AWS_REGION
       - eb/setup
       - run:
-          name: Set Environment Variables in Elastic Beanstalk
-          command: |
-            eb setenv POSTGRES_PASSWORD=$POSTGRES_PASSWORD \
-              POSTGRES_HOST=$POSTGRES_HOST \
-              POSTGRES_DB=$POSTGRES_DB \
-              AWS_BUCKET=$AWS_BUCKET \
-              S3_BUCKET_FRONTEND=$S3_BUCKET_FRONTEND \
-              AWS_REGION=$AWS_REGION \
-              JWT_SECRET=$JWT_SECRET \
-              URL=$URL \
-              PORT=$PORT \
-              USERNAME=$USERNAME \
-              AWS_ACCESS_KEY=$AWS_ACCESS_KEY \
-              AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
-      - run:
           name: Deploy Server
           command: npm run deploy
 workflows:
